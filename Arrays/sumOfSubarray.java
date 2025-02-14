@@ -13,10 +13,8 @@ public class sumOfSubarray {
             {
                 int end = j;
                 int sum = 0;
-                System.out.print("[");
                 for(int k = start; k <= end; k++)
                 {
-                    System.out.print(numbers[k] + "");
                     sum = sum + numbers[k];
                 }
                 if(sum > max)
@@ -27,14 +25,14 @@ public class sumOfSubarray {
                 {
                     min = sum;
                 }
-                System.out.println("] -> sum = "+sum);
+                System.out.println("sum = "+sum);
             }
             System.out.println();
         }
         System.out.println("Maximum sum among all is "+max+" Minimum among all the sum is "+min);
     }
     public static void main(String[] args) {
-        int numbers[] = {2,4,6,8,10};
+        int numbers[] = {1,-2,6,-1,3};
         sumOfSubArray(numbers);
     }
 }
